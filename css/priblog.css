@@ -1,0 +1,359 @@
+body{
+    margin:0;
+    padding: 0;
+    background: #e9eaed;
+    font-size: 16px;
+    /*文字回退*/
+    font-family: 微软雅黑 ， 宋体 ， sans-serif;
+}
+.h1, .h2, .h3, h4, h1, h2, h3, ul, li{
+    margin: 0;
+    color:white;
+    list-style: none;
+    padding: 0;
+}
+a {
+    color: white;
+    text-decoration: none;
+    /* 下划线去掉*/
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.element{
+    width: 100%;
+    height: 100%;
+}
+/*默认样式*/
+.header{
+    width: 100%;
+    height: 60px;
+    background: #1c2327;
+}
+.headerBox{
+    margin:0 auto;
+    width:1200px;
+    height: 100%;
+    /*    所有文字放中间*/
+    line-height: 60px; /* 单行文本垂直居中*/
+
+}
+.headerBox h1{
+    /*width:280px;*/
+    height: 100%;
+    float: left;
+    color: white;
+    font-weight: normal;
+    /*padding-top: 8px;*/
+}
+.headerBox .nav{
+    margin-left: 75px;
+    /*width:765px;由子元素填充*/
+    height: 100%;
+    float: left;
+}
+.headerBox .nav li{
+    /*padding-top: 17px;*/
+    height: 100%;
+    /*width: 150px; 不设置，由子元素填充*/
+    float: left;
+    margin-right: 36px;
+    list-style: none;
+}
+.headerBox .nav li a:hover{
+    color: #ffff00;
+}
+/*.dropdown{*/
+/*    float:left;*/
+/*    width:150px;*/
+/*    height: 100%;*/
+/*    !*padding-top: 17px;*!*/
+/*}*/
+.headerBox .rearch{
+    width:62px;
+    height: 100%;
+    float: right;
+    /*padding-top: 17px;*/
+}
+.main{
+    width: 1200px;
+    margin: 20px auto;
+}
+.main .left{
+    width: 880px;
+    float: left;
+    margin-right: 20px;
+    /*background-color: #579ab4;*/
+    /*margin-bottom: 20px;*/
+}
+.main .left .titleLabel{
+    padding: 20px;
+    height: 100px;
+    background-color: #ffffff;
+}
+.titleLabel a{
+    display: block;
+    height: 100px;
+    width: 130px;
+    float: left;
+}
+/*820=130+20+670*/
+.titleLabel .diarytext{
+    height: 100px;
+    float: left;
+    width: 670px;
+    margin-left: 20px;
+}
+.titleLabel .diarytext h1{
+    color: #000;
+    font-size: 22px;
+}
+.titleLabel .diarytext p{
+    color: #000;
+}
+.mostnew{
+    margin-top: 20px;
+    width: 840px;
+    /*height: 1200px;*/
+    margin-right: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    padding:20px;
+    /*min-height: 300px;*/
+}
+.article{
+    /*background: #579ab4;*/
+    width: 860px;
+    /*min-height: 300px;*/
+    padding: 20px 0;
+}
+.article li{
+    border-bottom: 1px dashed #eeeeee;
+    overflow: hidden;
+}
+.menu{
+    /*background: #579ab4;*/
+    height: 130px;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.article > li > a{
+    display: block;
+    height: 42px;
+    margin-bottom: 5px;
+}
+.article > li > a:hover h3{
+    color: #579ab4;
+}
+.mostnew ul li h1{
+    color: #F00;
+    float: left;
+}
+.mostnew ul li h3{
+    float: left;
+    color: #000;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+}
+.mostnew li .menu .photo{
+    display: block;
+    height: 124px;
+    width: 200px;
+    float: left;
+    overflow: hidden;
+}
+.mostnew li .menu >img{
+    /*transition: transform 100ms linear;*/
+    transition: all .5s ease-out .1s;
+}
+.mostnew li .menu a:hover img{
+    transform: scale(1.2,1.2);
+}
+.mostnew li .menu i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: #12b7de;
+    height: 27px;
+    /*width: 94px;*/
+    padding: 0 5px;
+    border-radius: 2px;
+}
+.mostnew li .menu i a{
+    color: white;
+}
+.mostnew li .menu .textBlock{
+    margin-left: 20px;
+    float: left;
+    width: 600px;
+    /*background: #579ab4;*/
+    height: 108px;
+    padding: 8px 20px;
+}
+.mostnew li .textBlock p{
+    color: #000;
+    display: block;
+    height: 60px;
+    margin: 16px 0;
+}
+.mostnew li .textBlock .date{
+    height: 30px;
+    /*background: #ac3f9a;*/
+    margin-top: -6px;
+}
+.mostnew li .date .actor{
+    height: 30px;
+    width: 30px;
+    float: left;
+}
+.mostnew li .date .label{
+    float: left;
+    /*width: 400px;*/
+    margin-left: 20px;
+    line-height: 30px;
+}
+.mostnew li .date .label span{
+    color: #999999;
+    margin-right: 10px;
+}
+.mostnew li .date .label span a{
+    color: #00997d;
+}
+.mostnew li .date .label .rmoreBtn{
+    width: 70px;
+    height: 30px;
+    float: right;
+    margin-left: 250px;
+    background: #12b7de;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+.mostnew li .date .label .rmoreBtn a{
+    color: white;
+}
+.main .right{
+    width: 280px;
+    height: 400px;
+    float: left;
+}
+.clicksort{
+    width: 240px;
+    margin-right: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    padding:20px;
+}
+.title{
+    border-bottom: 2px solid #eeeeee;
+    height: 41px;
+    line-height: 41px;
+    position: relative;
+}
+.title::after{
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    content: "";
+    background: #000;
+    left: 0;
+    bottom: 0;
+    /*-moz-transition: all .5s ease;*/
+    /*-webkit-transition: all .5s ease;*/
+    /*transition: all .5s ease;*/
+}
+
+.clicksort .connect > a{
+    display: block;
+    width: 240px;
+    height: 120px;
+    /*background: #579ab4;*/
+    margin: 20px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.clicksort .connect >img{
+    /*transition: transform 100ms linear;*/
+    transition: all .5s ease-out .1s;
+}
+.clicksort .connect a:hover img{
+    transform: scale(1.2,1.2);
+}
+.textarea{
+    width: 240px;
+}
+.clicksort .connect .textarea a{
+    width: 220px;
+    color: #000;
+    float: right;
+    line-height: 30px;
+    /*background: #ac3f9a;*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.clicksort .textarea li{
+    width: 240px;
+    height: 30px;
+    margin-bottom: 10px;
+    /*background: #2c5160;*/
+    line-height: 30px;
+    position: relative;
+}
+.clicksort .textarea li i::before{
+    margin-left: 5px;
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    float: left;
+    /*background: #ac3f9a;*/
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    font-size: 14px;
+    background: #ff6600;
+    color: #cabee2;
+    font-family: sans-serif;
+}
+.clicksort .textarea li:first-child i::before{
+    content: '1';
+}
+.clicksort .textarea li:nth-child(2) i::before{
+    content: '2';
+}
+.clicksort .textarea li:nth-child(3) i::before{
+    content: '3';
+}
+.clicksort .textarea li:nth-child(2n){
+    background: #f6f6f6;
+}
+.allCommend{
+    width: 240px;
+    height: 800px;
+    margin-right: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    padding:20px;
+    margin-top: 20px;
+}
+.allCommend > a{
+    display: block;
+    width: 240px;
+    height: 120px;
+    /*background: #579ab4;*/
+    margin: 20px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.allCommend >img{
+    /*transition: transform 100ms linear;*/
+    transition: all .5s ease-out .1s;
+}
+.allCommend a:hover img{
+    transform: scale(1.2,1.2);
+}
