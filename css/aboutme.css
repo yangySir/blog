@@ -1,0 +1,158 @@
+body{
+    margin:0;
+    padding: 0;
+    background: #e9eaed;
+    font-size: 16px;
+    /*文字回退*/
+    font-family: 微软雅黑 ， 宋体 ， sans-serif;
+}
+h1, h2, h3, h4, h5, h6 ,ul, li, ol, p{
+    margin: 0;
+    color:white;
+    list-style: none;
+    padding: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+    /* 下划线去掉*/
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background: #1c2327;
+}
+.headerBox{
+    margin:0 auto;
+    width:1200px;
+    height: 100%;
+    /*    所有文字放中间*/
+    line-height: 60px; /* 单行文本垂直居中*/
+
+}
+.headerBox h1{
+    /*width:280px;*/
+    height: 100%;
+    float: left;
+    color: white;
+    font-weight: normal;
+    /*padding-top: 8px;*/
+}
+.headerBox .nav{
+    margin-left: 75px;
+    /*width:765px;由子元素填充*/
+    height: 100%;
+    float: left;
+}
+.headerBox .nav li{
+    /*padding-top: 17px;*/
+    height: 100%;
+    /*width: 150px; 不设置，由子元素填充*/
+    float: left;
+    margin-right: 36px;
+    list-style: none;
+}
+.headerBox .nav li a:hover{
+    color: #ffff00;
+}
+.headerBox .rearch{
+    width:62px;
+    height: 100%;
+    float: right;
+    /*padding-top: 17px;*/
+}
+.headerBox .rearch a.iconfont{
+    color: white;
+    font-size: 20px;
+}
+.main{
+    width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+.main .mine{
+    margin: 20px 0;
+    width: 967.55px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.main .mine .photo{
+    height: 104px;
+    width: 104px;
+    float: left;
+    padding: 0 10px;
+}
+.main .mine h3{
+    margin-top: 5px;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.main .mine p{
+    color: #666666;
+    margin-bottom: 5px;
+}
+.main .pho{
+    width: 180px;
+    height: 220px;
+    /*background: #fbb548;*/
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.main .inner{
+    margin-top: 40px;
+    width: 1120px;
+    /*background: #36d681;*/
+    position: relative;
+}
+.main .inner h2{
+    margin: 20px 0;
+    font-size: 18px;
+    width: 120px;
+    border-bottom: #000 1px dashed;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: #333333;
+
+}
+.main .inner .ph{
+    position: absolute;
+    left: 95px;
+    top: 5px;
+    width: 40px;
+    height: 25px;
+}
+
+.main .inner p{
+    margin-bottom: 15px;
+    display: inline-block;
+    line-height: 1.5;
+    color: #333333;
+}
+
+
+
+footer{
+    background: #373D41;
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    border-top: #00C1DE 10px solid;
+    padding: 60px 100px;
+    color: #73777a;
+    font-size: 18px;
+}
+footer > div > div{
+    padding: 10px 10px;
+}
+

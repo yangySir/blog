@@ -1,0 +1,82 @@
+body{
+    margin:0;
+    padding: 0;
+    background: #e9eaed;
+    font-size: 16px;
+    /*文字回退*/
+    font-family: 微软雅黑 ， 宋体 ， sans-serif;
+}
+h1, h2, h3, h4, h5, h6 ,ul, li, ol, p{
+    margin: 0;
+    color:white;
+    list-style: none;
+    padding: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+    /* 下划线去掉*/
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.element{
+    width: 100%;
+    height: 100%;
+}
+/*默认样式*/
+.header{
+    width: 100%;
+    height: 60px;
+    background: #1c2327;
+}
+.headerBox{
+    margin:0 auto;
+    width:1200px;
+    height: 100%;
+    /*    所有文字放中间*/
+    line-height: 60px; /* 单行文本垂直居中*/
+
+}
+.headerBox h1{
+    /*width:280px;*/
+    height: 100%;
+    float: left;
+    color: white;
+    font-weight: normal;
+    /*padding-top: 8px;*/
+}
+.headerBox .nav{
+    margin-left: 75px;
+    /*width:765px;由子元素填充*/
+    height: 100%;
+    float: left;
+}
+.headerBox .nav li{
+    /*padding-top: 17px;*/
+    height: 100%;
+    /*width: 150px; 不设置，由子元素填充*/
+    float: left;
+    margin-right: 36px;
+    list-style: none;
+}
+.headerBox .nav li a:hover{
+    color: #ffff00;
+}
+/*.dropdown{*/
+/*    float:left;*/
+/*    width:150px;*/
+/*    height: 100%;*/
+/*    !*padding-top: 17px;*!*/
+/*}*/
+.headerBox .rearch{
+    width:62px;
+    height: 100%;
+    float: right;
+    /*padding-top: 17px;*/
+}
+.headerBox .rearch .iconfont{
+    color: white;
+    font-size: 24px;
+}
