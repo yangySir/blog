@@ -80,3 +80,115 @@ img{
     color: white;
     font-size: 24px;
 }
+.main{
+    width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px 40px 40px 40px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.main .pho{
+    width: 180px;
+    height: 220px;
+    /*background: #fbb548;*/
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.title{
+    border-bottom: 2px solid #eeeeee;
+    height: 41px;
+    line-height: 41px;
+    position: relative;
+}
+.title .wid{
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background: #000;
+    left: 0;
+    bottom: 0;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition: width .5s ease;
+}
+.title:hover .wid{
+    width: 100px;
+}
+.main ul{
+    padding: 5px 0;
+    margin-bottom: 50px;
+}
+.main ul li{
+    padding: 4px 0;
+}
+.main ul li span{
+    color: #999999;
+    line-height: 32px;
+    padding-right: 40px;
+    position: relative;
+}
+.main ul li span::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    background: #e0dfdf;
+    right: 18px;
+}
+.main ul li i a{
+    color: #333333;
+    font-style: normal;
+}
+.main ul li i{
+    position: absolute;
+    padding: 5px 0;
+}
+.main ul li i::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #cccaca;
+    background: #fff;
+    position: absolute;
+    top: 9px;
+    left:-26px;
+    transition: background-color 100ms linear;
+}
+.main ul li:hover i::before{
+   background-color: #000000;
+}
+.main .pageList{
+    padding: 20px;
+    height: 30px;
+    width: 200px;
+    /*background: #fbb548;*/
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+}
+.main .pageList span{
+    padding:5px 5px;
+    background: #999999;
+    color:#333333;
+    cursor: pointer;
+}
+footer{
+    background: #373D41;
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    border-top: #00C1DE 10px solid;
+    padding: 60px 100px;
+    color: #73777a;
+    font-size: 18px;
+}
+footer > div > div{
+    padding: 10px 10px;
+}

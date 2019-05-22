@@ -80,3 +80,270 @@ img{
     color: white;
     font-size: 24px;
 }
+.main{
+    width: 1200px;
+    margin: 20px auto;
+}
+.main .left{
+    width: 840px;
+    /*height:400px;*/
+    float: left;
+    margin-right: 20px;
+    background-color: #ffffff;
+    /*margin-bottom: 20px;*/
+    padding: 20px;
+}
+.main .left .textdoc h1{
+    padding:20px 0;
+    color: #000;
+    font-size: 22px;
+}
+.main .left .textdoc .date{
+    height: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.main .left .textdoc .date span{
+    color: #999999;
+    margin: 0 5px;
+}
+.main .left .textdoc .date img{
+    width: 30px;
+    height: 30px;
+}
+.main .left .textdoc .brief{
+    color: #888888;
+    border: 1px solid #F3F3F3;
+    padding: 10px;
+    margin: 10px auto 0;
+    line-height: 23px;
+    background: none repeat 0 0 #F6F6F6;
+}
+.main .left .textdoc .textarea{
+    padding: 20px 0;
+}
+.main .left .textdoc .textarea p{
+    color: #333333;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+.main .left .textdoc .textarea img{
+    display: block;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    padding: 10px 0;
+}
+.title{
+    border-bottom: 2px solid #eeeeee;
+    height: 41px;
+    line-height: 41px;
+    position: relative;
+}
+
+.title .wid{
+    position: absolute;
+    width: 70px;
+    height: 2px;
+    background: #000;
+    left: 0;
+    bottom: 0;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition: width .5s ease;
+}
+.title:hover .wid{
+    width: 100px;
+}
+.textdoc .locate{
+   float:right;
+    color: #666666;
+    font-size: 14px;
+}
+.main .right{
+    width: 260px;
+    height: 400px;
+    float: left;
+    /*background: #fbb548;*/
+}
+.clicksort{
+    width: 240px;
+    /*margin-right: 20px;*/
+    background: #ffffff;
+    border-radius: 5px;
+    padding:20px;
+}
+.clicksort .connect > a{
+    display: block;
+    width: 240px;
+    height: 120px;
+    /*background: #579ab4;*/
+    margin: 20px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.clicksort .connect >img{
+    /*transition: transform 100ms linear;*/
+    transition: all .5s ease-out .1s;
+}
+.clicksort .connect a:hover img{
+    transform: scale(1.2,1.2);
+}
+.clicksort .connect .textarea{
+    width: 240px;
+}
+.clicksort .connect .textarea a{
+    width: 220px;
+    color: #000;
+    float: right;
+    line-height: 30px;
+    /*background: #ac3f9a;*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.clicksort .textarea li{
+    width: 240px;
+    height: 30px;
+    margin-bottom: 10px;
+    /*background: #2c5160;*/
+    line-height: 30px;
+    position: relative;
+}
+.clicksort .textarea li i::before{
+    margin-left: 5px;
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    font-style: normal;
+    text-align: center;
+    line-height: 16px;
+    float: left;
+    /*background: #ac3f9a;*/
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    font-size: 14px;
+    background: #ff6600;
+    color: #cabee2;
+    font-family: sans-serif;
+}
+.clicksort .textarea li:first-child i::before{
+    content: '1';
+}
+.clicksort .textarea li:nth-child(2) i::before{
+    content: '2';
+}
+.clicksort .textarea li:nth-child(3) i::before{
+    content: '3';
+}
+.clicksort .textarea li:nth-child(2n){
+    background: #f6f6f6;
+}
+.recommend{
+    width: 240px;
+    /*margin-right: 20px;*/
+    background: #ffffff;
+    border-radius: 5px;
+    padding:20px;
+    margin-top: 20px;
+}
+.recommend > a > .da {
+    margin:20px 0;
+    width: 240px;
+    height: 123.8px;
+    position: relative;
+}
+.recommend > a > .da span{
+    color: #ffffff;
+    padding:0 10px;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.recommend > a > .da img{
+    transition: all 2s ease-out .1s;
+}
+.recommend > a > .da:hover img{
+    transform: scale(1.2,1.2);
+}
+.recommend a > .hrey{
+    height: 70px;
+    width: 100%;
+    background:#F6F6F6 ;
+    display: flex;
+}
+.recommend a > .hrey .xiao{
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+}
+.recommend > a > .hrey .xiao img{
+    transition: all 2s ease-out .1s;
+}
+.recommend > a > .hrey .xiao:hover img{
+    transform: scale(1.2,1.2);
+}
+.recommend > a >.hrey p{
+    flex: 1;
+    color: #333333;
+    padding: 15px 5px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    font-size: 14px;
+}
+.right .jin{
+    width: 240px;
+    /*margin-right: 20px;*/
+    background: #ffffff;
+    border-radius: 5px;
+    padding:20px;
+    margin-top: 20px;
+}
+.label{
+    width: 240px;
+    /*margin-right: 20px;*/
+    background: #ffffff;
+    border-radius: 5px;
+    padding:20px;
+    margin-top: 20px;
+}
+.label ul{
+    margin-top: 20px;
+}
+.label ul li{
+    color: #000;
+    display: inline-block;
+    padding:3px 3px;
+    border-radius: 10px;
+    margin: 5px 5px;
+    background: #579ab4;
+}
+.label ul li:nth-child(2n){
+    background: #36d681;
+}
+.label ul li:nth-child(3n){
+    background: #FF947C;
+}
+footer{
+    background: #373D41;
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    border-top: #00C1DE 10px solid;
+    padding: 60px 100px;
+    color: #73777a;
+    font-size: 18px;
+}
+footer > div > div{
+    padding: 10px 10px;
+}

@@ -492,8 +492,9 @@ img{
     display: inline-block;
     /*transition: transform 0.5s ease-in 5s;*/
     overflow: hidden;
-    transition: all .5s ease-out .1s;
-}
+}.box .image img{
+     transition: all .5s ease-out .1s;
+ }
 .box > a:hover img{
     transform: scale(1.1,1.1);
 }
@@ -582,6 +583,13 @@ img{
     height: 124px;
     width: 200px;
     float: left;
+    overflow: hidden;
+}
+.mostnew li .menu .photo img{
+    transition: all 2s ease-out .1s;
+}
+.mostnew li .menu .photo:hover img{
+    transform: scale(1.2,1.2);
 }
 .mostnew li .menu i{
     position: absolute;
@@ -803,6 +811,8 @@ img{
     width: 16px;
     height: 16px;
     line-height: 20px;
+    font-style: normal;
+    text-align: center;
     background: #B1B1B1;
     font-size: 14px;
     color: #ffffff;

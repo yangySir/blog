@@ -338,30 +338,97 @@ img{
 .clicksort .textarea li:nth-child(2n){
     background: #f6f6f6;
 }
-.allCommend{
+.recommend{
     width: 240px;
-    height: 800px;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     background: #ffffff;
     border-radius: 5px;
     padding:20px;
     margin-top: 20px;
 }
-.allCommend > a{
-    display: block;
+.recommend > a > .da {
+    margin:20px 0;
     width: 240px;
-    height: 120px;
-    /*background: #579ab4;*/
-    margin: 20px 0;
-    border-radius: 5px;
+    height: 123.8px;
+    position: relative;
+}
+.recommend > a > .da span{
+    color: #ffffff;
+    padding:0 10px;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
     overflow: hidden;
 }
-.allCommend >img{
-    /*transition: transform 100ms linear;*/
-    transition: all .5s ease-out .1s;
+.recommend > a > .da img{
+    transition: all 2s ease-out .1s;
 }
-.allCommend a:hover img{
+.recommend > a > .da:hover img{
     transform: scale(1.2,1.2);
+}
+.recommend a > .hrey{
+    height: 70px;
+    width: 100%;
+    background:#F6F6F6 ;
+    display: flex;
+}
+.recommend a > .hrey .xiao{
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+}
+.recommend > a > .hrey .xiao img{
+    transition: all 2s ease-out .1s;
+}
+.recommend > a > .hrey .xiao:hover img{
+    transform: scale(1.2,1.2);
+}
+.recommend > a >.hrey p{
+    flex: 1;
+    color: #333333;
+    padding: 15px 5px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    font-size: 14px;
+}
+.right .jin{
+    width: 240px;
+    /*margin-right: 20px;*/
+    background: #ffffff;
+    border-radius: 5px;
+    padding:20px;
+    margin-top: 20px;
+}
+.labell{
+    width: 240px;
+    /*margin-right: 20px;*/
+    background: #ffffff;
+    border-radius: 5px;
+    padding:20px;
+    margin-top: 20px;
+}
+.labell > ul{
+    margin-top: 20px;
+}
+.labell > ul > li{
+    color: #000;
+    display: inline-block;
+    padding:3px 3px;
+    border-radius: 10px;
+    margin: 5px 5px;
+    background: #579ab4;
+}
+.labell > ul > li:nth-child(2n){
+    background: #36d681;
+}
+.labell > ul > li:nth-child(3n){
+    background: #FF947C;
 }
 footer{
     background: #373D41;
