@@ -85,13 +85,16 @@ img{
     margin: 20px auto;
 }
 .main .left{
-    width: 840px;
-    /*height:400px;*/
+    width: 860px;
     float: left;
     margin-right: 20px;
+}
+.main .left .textdoc{
+    position: relative;
     background-color: #ffffff;
-    /*margin-bottom: 20px;*/
-    padding: 20px;
+    padding: 20px 20px 200px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 .main .left .textdoc h1{
     padding:20px 0;
@@ -134,6 +137,72 @@ img{
     height: 400px;
     margin: auto;
     padding: 10px 0;
+}
+.main .left .textdoc .zan{
+    padding: 5px 10px;
+    height: 30px;
+    line-height: 30px;
+    background: #FF947C;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    margin-left: -50px;
+}
+.main .left .textdoc .shangxia{
+    position: absolute;
+    bottom: 0;
+}
+.main .left .textdoc .shangxia span{
+   display: block;
+    padding: 10px 0;
+    color: #333333;
+}
+.main .left .textdoc .shangxia span a{
+    color: #333333;
+}
+.main .left .textdoc .shangxia span a:hover{
+    text-decoration: underline;
+}
+.left .discuss{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.left .discuss ul{
+    padding: 20px 0;
+}
+.left .discuss ul li{
+    height: 100px;
+    background: #36d681;
+    border-bottom: 2px solid #999999;
+    display: flex;
+    position: relative;
+}
+.left .discuss ul li .rentou{
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background: #FF947C;
+    overflow: hidden;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+.left .discuss ul li > .p{
+    flex:1;
+    margin-left: 80px;
+    padding-top: 30px;
+    position: relative;
+}
+.left .discuss ul li > .p span{
+     position: absolute;
+     right: 0;
+     top: 30px;
+    font-size: 12px;
+}
+.left .discuss ul li > .p p{
+     margin-bottom: 5px;
 }
 .title{
     border-bottom: 2px solid #eeeeee;
@@ -255,6 +324,7 @@ img{
     width: 240px;
     height: 123.8px;
     position: relative;
+    overflow: hidden;
 }
 .recommend > a > .da span{
     color: #ffffff;
@@ -333,6 +403,37 @@ img{
 }
 .label ul li:nth-child(3n){
     background: #FF947C;
+}
+.guass{
+    width: 240px;
+    /*margin-right: 20px;*/
+    background: #ffffff;
+    border-radius: 5px;
+    padding:20px;
+    margin-top: 20px;
+}
+.guass ul{
+    margin-top: 10px;
+}
+.guass ul li{
+    line-height: 22px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+.guass ul li > a{
+    color: #333333;
+}
+.guass ul li::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #333333;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -3px;
 }
 footer{
     background: #373D41;
