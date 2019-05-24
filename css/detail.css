@@ -252,9 +252,8 @@ img{
     border-radius: 5px;
     overflow: hidden;
 }
-.clicksort .connect >img{
-    /*transition: transform 100ms linear;*/
-    transition: all .5s ease-out .1s;
+.clicksort .connect a > img{
+    transition: all 1s ease-out .1s;
 }
 .clicksort .connect a:hover img{
     transform: scale(1.2,1.2);

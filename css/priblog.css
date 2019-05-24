@@ -169,9 +169,9 @@ img{
     float: left;
     overflow: hidden;
 }
-.mostnew li .menu >img{
+.mostnew li .menu a > img{
     /*transition: transform 100ms linear;*/
-    transition: all .5s ease-out .1s;
+    transition: all 1s ease-out .1s;
 }
 .mostnew li .menu a:hover img{
     transform: scale(1.2,1.2);
@@ -281,7 +281,7 @@ img{
     border-radius: 5px;
     overflow: hidden;
 }
-.clicksort .connect >img{
+.clicksort .connect a > img{
     /*transition: transform 100ms linear;*/
     transition: all .5s ease-out .1s;
 }
@@ -351,6 +351,7 @@ img{
     width: 240px;
     height: 123.8px;
     position: relative;
+    overflow: hidden;
 }
 .recommend > a > .da span{
     color: #ffffff;
