@@ -5,8 +5,7 @@
     <title>博客初始界面</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1194436_6vw5tjr6dgk.css">
-    <script src="./js/jquery-3.3.1.min.js"> </script>
-
+    <script src="./js/index.js"> </script>
 </head>
 <body>
 <div class="header">
@@ -25,19 +24,11 @@
         </div>
     </div>
 </div>
-<!--            <div class="naver">-->
-<!--                <div class="btn-group" role="group" aria-label="...">-->
-<!--                    <button type="button" class="btn btn-default">Left</button>-->
-<!--                    <button type="button" class="btn btn-default">Middle</button>-->
-<!--                    <button type="button" class="btn btn-default">Right</button>-->
-<!--                </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--    </div>-->
+
     <div class="connnect1">
         <div class="connect1-left">
-            <div>
-            <a href="" class="item" style="display: block"><img src="./image/1.jpg" alt="blank"></a>
+            <div class="image">
+            <a href="" class="item"><img src="./image/1.jpg" alt="blank"></a>
             <a href="" class="item"><img src="./image/2.jpg" alt="blank"></a>
             <a href="" class="item"><img src="./image/3.jpg" alt="blank"></a>
             <a href="" class="item"><img src="./image/4.jpg" alt="blank"></a>
@@ -56,16 +47,16 @@
                 <li class="page" data-target="2"><div class="btn"></div></li>
                 <li class="page" data-target="3"><div class="btn"></div></li>
             </ul>
-            <script>
-                $(document).ready(function(){
-                    $(".btn").click( function(){
-                        $(this).addClass("active");
-                        $(this).parent('li').siblings().children().removeClass("active")
-                    });
-                });
-                //轮播
+<!--            <script>-->
+<!--                $(document).ready(function(){-->
+<!--                    $(".btn").click( function(){-->
+<!--                        $(this).addClass("active");-->
+<!--                        $(this).parent('li').siblings().children().removeClass("active")-->
+<!--                    });-->
+<!--                });-->
+<!--                //轮播-->
 
-            </script>
+<!--            </script>-->
         </div>
     <div class="connect1-middle">
         <div class="middle1">
@@ -96,7 +87,7 @@
         <div class="connect2-left">
             <div class="diaryList">
                 <ul>
-                    <li><a href="">个人博客日记</a></li>
+                    <li><a>个人博客日记</a></li>
                     <li><a>css3|html5</a></li>
                     <li><a>网站建设</a></li>
                     <li><a>推荐工具</a></li>
@@ -113,11 +104,11 @@
                         </li>
                     </ul>
                     <ul class="tabList">
-                        <li>
+                        <li class="hot">
                             <h1><i>1</i> <a href="">安静地做一个爱设计的女子</a></h1>
                             <p>自从入了这行，很多人跟我说可以做网络教程，我也有考虑，但最终没有实现，因为我觉得在这个教程泛滥的时代，直接做一套免费的原创个人博客模板更为实在。每当看到自己喜欢的配色图片</p>
                         </li>
-                        <li class="hot">
+                        <li>
                             <h1><i>2</i> <a href="">安静地做一个爱设计的女子</a></h1>
                             <p>自从入了这行，很多人跟我说可以做网络教程，我也有考虑，但最终没有实现，因为我觉得在这个教程泛滥的时代，直接做一套免费的原创个人博客模板更为实在。每当看到自己喜欢的配色图片</p>
                         </li>

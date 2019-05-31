@@ -38,7 +38,6 @@ img{
     height: 100%;
 /*    所有文字放中间*/
     line-height: 60px; /* 单行文本垂直居中*/
-
 }
 .headerBox h1{
     /*width:280px;*/
@@ -101,10 +100,13 @@ img{
     float: left;
     position: relative;
 }
-.connect1-left div .item{
-    display: none;
+/*.connect1-left div .item{*/
+/*    display: none;*/
+/*}*/
+.connect1-left div.image{
+    display: block;
 }
-.connect1-left div a{
+.connect1-left .image a{
     width: 100%;
     height: 100%;
     display: block;
@@ -117,22 +119,25 @@ img{
     position: absolute;
     top: 50%;
     margin-top: -16px;
+    z-index: 9999;
+    transition: transform 100ms linear;
 }
 .leftbtn{
-    left: 20px;
+    left: 40px;
 }
 .rightbtn{
-    right: 20px;
+    right: 40px;
 }
 .btnList{
     height: 20px;
-    width: 128px;
+    width: 120px;
     position: absolute;
     bottom: 10px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    z-index: 9999;
 }
 .btnList li{
     float: left;
@@ -244,16 +249,27 @@ img{
 .diaryList li{
     margin-right: 24px;
     float: left;
+    position: relative;
+}
+.diaryList li.active::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
 }
 .diaryList li a{
     color: #333;
     font-size: 16px;
-}
-.diaryList li a:hover{
-    color: #FF947C;
     cursor: pointer;
-/*    小手标识*/
 }
+/*.diaryList li a:hover{*/
+/*    color: #FF947C;*/
+/*    cursor: pointer;*/
+/*!*    小手标识*!*/
+/*}*/
 .diaryTab{
     width: 100%;
     height: 220px;
@@ -740,7 +756,7 @@ img{
     position: relative;
     overflow: hidden;
 }
-.top >img{
+.top > img{
      transition: transform 100ms linear;
  }
 .top .element a:hover img{
@@ -787,27 +803,7 @@ img{
     text-overflow: ellipsis;
     float: right;
 }
-/*.clicksort-bootom ul{*/
-/*    counter-reset: index;*/
-/*}*/
-/*.clicksort-bootom li::before{*/
-/*    content: counter(index);*/
-/*    counter-increment: index;*/
-/*    display: inline-block;*/
-/*    width: 20px;*/
-/*    height: 20px;*/
-/*    background: orangered;*/
-/*    color: #e5e5e5;*/
-/*    font-size: 16px;*/
-/*    text-align: center;*/
-/*    line-height: 20px;*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    top: 50%;		    */
-/*    margin-top: -12px;*/
-/*    border-radius: 5px;*/
-/*    border: 2px solid #e5e5e5;*/
-/*}*/
+
 .clicksort-bootom li i::before{
     /*伪元素不能直接设宽高*/
     content: '';
