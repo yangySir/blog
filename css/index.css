@@ -99,6 +99,7 @@ img{
     margin-right: 15px;
     float: left;
     position: relative;
+    overflow: hidden;
 }
 /*.connect1-left div .item{*/
 /*    display: none;*/
@@ -112,9 +113,11 @@ img{
     display: block;
     position: absolute;
     top: 0;
+    left: 614px;
+}
+.connect1-left .image a:first-child{
     left: 0;
 }
-
 .leftbtn , .rightbtn{
     position: absolute;
     top: 50%;
