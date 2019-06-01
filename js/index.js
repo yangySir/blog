@@ -168,7 +168,7 @@ window.onload=function () {
             flag=true;
         });
         current=next;
-    }
+    };
 
     //四个按钮的
     for(let i=0;i<btns.length;i++){
@@ -203,4 +203,28 @@ window.onload=function () {
     conne.onmouseleave=function(){
         t=setInterval(right.onclick,3000);
     };
+   /*
+    按需加载图片
+    页面滚动距离+窗口高度 >= 元素到文档的高度
+    img.src=img.aa
+    */
+   let view=window.innerHeight;
+   let imgs=document.querySelectorAll('.lazyclass');
+   let positionArr=[];
+   imgs.forEach(function(elem){
+       let parent=elem.offsetParent;
+       positionArr.push(parent.offsetTop+ elem.offsetTop)
+   });
+   window.onscroll=function () {
+       let scrolltop=document.documentElement.scrollTop||document.body.scrollTop;
+       for(let i=0;i<positionArr.length;i++){
+           if(scrolltop+view>=positionArr[i]+100){
+               //标准属性
+               if(!imgs[i].src){
+                   imgs[i].src=imgs[i].getAttribute('aa');
+               }
+           }
+       }
+   }
+
 };
