@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1194436_6vw5tjr6dgk.css">
     <script src="./js/index.js"> </script>
     <script src="./js/animate.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
 </head>
 <body>
 <div class="header">
@@ -15,7 +16,13 @@
         <ul class="nav">
             <li><a href="index.html">网站首页</a></li>
             <li><a href="priblog.html">个人博客日记</a> </li>
-            <li><a href="#">网站制作</a></li>
+            <li class="drop"><a href="#">网站制作</a>
+                <ul class="droplist">
+                    <li><a href="">HTML|CSS</a></li>
+                    <li><a href="">网站制作</a></li>
+                    <li><a href="">推荐工具</a></li>
+                </ul>
+            </li>
             <li><a href="detail.html">详细界面</a></li>
             <li><a href="aboutme.html">关于我</a></li>
             <li><a href="timeline.html">时间轴</a></li>
@@ -25,7 +32,25 @@
         </div>
     </div>
 </div>
+<script>
+   //jquery实现下拉框
+    $(function () {
+        let dropBtn=$('li:has(.droplist)');
+        let drop=$('.droplist');
+        dropBtn.on('mouseenter',function () {
+            let index=$(this).index('li:has(.droplist)');
+            $(drop[index]).slideDown();
+        })
+        dropBtn.on('mouseleave',function () {
+            let index=$(this).index('li:has(.droplist)');
+            $(drop[index]).slideUp();
+        })
+        dropBtn.hover(function () {
+            let index=$(this).index('li:has(.droplist)');
 
+        })
+    })
+</script>
     <div class="connnect1">
         <div class="connect1-left">
             <div class="image">
@@ -88,7 +113,7 @@
         <div class="connect2-left">
             <div class="diaryList">
                 <ul>
-                    <li><a>个人博客日记</a></li>
+                    <li class="active"><a>个人博客日记</a></li>
                     <li><a>css3|html5</a></li>
                     <li><a>网站建设</a></li>
                     <li><a>推荐工具</a></li>

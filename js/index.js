@@ -145,7 +145,6 @@ window.onload=function () {
             flag=true;
         });
         current=next;
-
     };
     left.onclick=function(){
         if(!flag){

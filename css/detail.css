@@ -169,6 +169,24 @@ img{
     border-radius: 5px;
     margin-bottom: 20px;
 }
+.left .discuss form{
+    margin-top: 20px;
+}
+.left .discuss form .boxImg{
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.left .discuss form .boxImg .humb{
+    height: 50px;
+    width: 50px;
+    background: #FF947C;
+    margin-right: 20px;
+    opacity: 0.7;
+}
+.left .discuss form p{
+    color: #333333;
+}
 .left .discuss ul{
     padding: 20px 0;
 }

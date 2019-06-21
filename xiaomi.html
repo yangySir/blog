@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">  <!--元信息标签-->
+	<meta name="keyword" content="关键字">
+	<meta name="discription" content="页面描述">
+	<script src="./js/jquery-3.4.1.min.js"></script>
+	<title>轮播图</title>
+	<style type="text/css">
+		/*
+		默认样式初始化 
+		*/
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		#banner{      /*id命名*/
+			position: relative; /*相对定位  给绝对定位做位置参考*/
+			width: 1200px;
+			height: 460px;
+			margin: 0 auto;  /*外边距*/
+		}
+		.img-wrap{
+			width: 1200px;
+			height: 460px;
+		}
+		.item{
+			position: absolute;/*绝对定位 自动转化为块元素*/
+			display: block; /*转换为块级元素*/
+			width: 1200px;
+			height: 460px;
+		}
+		.act{
+			z-index: 9;
+		}
+         /* 
+			样式
+			结构样式 宽高 位置 盒子模型 边框 背景
+			文本样式 color  line-height 
+			*/
+			.btn-list{
+				position: absolute;
+				right: 30px;
+				bottom: 20px;
+				width: 110px; 
+				height: 20px;
+				/*background: red;*/
+				z-index: 10;
+			}
+			.btn{
+				float: left;  /*左浮动 一横排*/
+				width: 6px;
+				height: 6px;
+				background: #7c7c7c;
+				border: 2px solid #c6c6c6;
+				border-radius: 5px;/*边框圆角属性*/
+				margin-right: 8px; 
+				cursor:pointer;  /*手指样式*/
+			}
+			.btn:hover{  /*鼠标悬停的时候 按钮的样式*/
+				background-color: #e7e7e7;
+				border-color: #787878;  
+         	/*只改颜色,没必要background: #7c7c7c;
+         	border: 2px solid #c6c6c6;故 -color*/
+         }
+         .active{
+         	background-color: #e7e7e7;
+         	border-color: #787878;  
+         }
+		 .hot{
+			 background: #00C1DE;
+		 }
+         .tab{
+         	position: absolute;
+         	top: 190px;
+         	width: 50px;
+         	height: 69px;
+			 z-index: 10;
+         }
+         .left{
+         	left: 60px;
+         }
+         .right{
+         	right: 60px;
+         }
+     </style>
+ </head>
+ <body>
+	<!-- 
+	id      唯一
+	class   类，一个或多个以上
+-->
+<div id="banner">
+	<div class="img-wrap">
+		<a href="" class="item"><img src="./image/1.jpg" alt="">
+		</a>
+		<a href="" class="item"><img src="./image/2.jpg" alt="">
+		</a>
+		<a href="" class="item"><img src="./image/3.jpg"alt="">
+		</a>
+		<a href="" class="item"><img src="./image/4.jpg" alt="">
+		</a>
+	</div>
+	<ul class="btn-list">
+		<li class="btn"></li>
+		<li class="btn"></li>
+		<li class="btn"></li>
+		<li class="btn"></li>
+	</ul>
+	<div class="tab left">
+		<img src="./image/left.png" alt="">
+	</div>
+	<div class="tab right">
+		<img src="./image/right.png" alt="">
+	</div>
+</div>
+	<script>
+		$(function () {
+			let current=0,next=0;
+			let flag=true;
+			let items=$('.item');
+			let btns=$('.btn');
+			let imgs=$('.img-wrap');
+			$(items[current]).addClass('act').siblings().removeClass('act')
+			$(btns[current]).addClass('hot').siblings().removeClass('hot');
+			$('.btn-list').on('click','.btn',function () {
+				 current=$(this).index();
+				$(this).addClass('hot').siblings().removeClass('hot');
+			    $(items[current]).addClass('act').siblings().removeClass('act')
+			})
+
+			$('.right').on('click',function (){
+				next++;
+				while(next==items.length) {
+					next = 0;
+				}
+				$(btns[next]).addClass('hot').siblings().removeClass('hot');
+				$(items[next]).addClass('act').siblings().removeClass('act')
+			})
+			$('.left').on('click',function () {
+				while(next==0) {
+					next = items.length;
+				}
+				next--;
+				$(btns[next]).addClass('hot').siblings().removeClass('hot');
+				$(items[next]).addClass('act').siblings().removeClass('act')
+			})
+            let t=setInterval(function () {
+				$('.right').trigger('click')
+			},1000);
+			imgs[0].onmouseenter=function () {
+				clearInterval(t);
+			};
+			imgs[0].onmouseleave=function () {
+				t=setInterval(function () {
+					$('.right').trigger('click')
+				},1000)
+			}
+		})
+	</script>
+</body>
+</html>
+<!--JS特效的产生原理是什么
+   js修改元素的属性 或者 样式的值 产生特效 事件
+ -->
